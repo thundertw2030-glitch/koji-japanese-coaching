@@ -1,13 +1,40 @@
-# Deployment checklist
+# Version 3.0 公開チェックリスト
 
-- [ ] Upload all files to the repository root, not a nested folder
-- [ ] Netlify base directory: blank
-- [ ] Build command: blank
-- [ ] Publish directory: `.`
-- [ ] Production branch: `main`
-- [ ] Confirm `/en/`, `/ja/`, `/sitemap.xml`, `/privacy.html`
-- [ ] Test Email, WhatsApp, LINE on desktop and mobile
-- [ ] Test consent Accept and Decline
-- [ ] Submit sitemap in Search Console
-- [ ] Confirm GA4 Realtime and Clarity recordings
-- [ ] Create `develop` branch and enable Netlify branch deploy
+## GitHub / Netlify
+
+- [ ] ZIPを解凍し、フォルダの中身をリポジトリのルートへ配置
+- [ ] `main` ブランチへコミット・プッシュ
+- [ ] Netlifyのデプロイが成功している
+- [ ] Base directory：空欄
+- [ ] Build command：空欄
+- [ ] Publish directory：`.`
+
+## 表示
+
+- [ ] `/ja/` の新Heroにプロフィール写真が表示される
+- [ ] `/en/` と中国語ページも表示確認
+- [ ] パソコンでナビゲーションが1行に収まる
+- [ ] スマートフォンでメニューが開閉する
+- [ ] スマートフォンで横スクロールが発生しない
+- [ ] サービス・教材・記事の写真が表示される
+- [ ] Email・WhatsApp・LINE固定バーが機能する
+
+## 機能
+
+- [ ] レッスン診断を3問完了できる
+- [ ] Emailの宛先と件名が正しい
+- [ ] WhatsAppに初期メッセージが入る
+- [ ] LINEリンクが開く
+- [ ] Cookieの同意・拒否が機能する
+
+## 計測・検索
+
+- [ ] GA4リアルタイムでアクセスを確認
+- [ ] Microsoft Clarityでセッションを確認
+- [ ] `sitemap.xml` が開く
+- [ ] Search Consoleでサイトマップを再送信
+
+## 紹介動画
+
+- [ ] 動画完成まではセクションが表示されない
+- [ ] 動画完成後は `VIDEO_INTEGRATION.md` の手順で有効化

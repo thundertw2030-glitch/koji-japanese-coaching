@@ -1,33 +1,22 @@
-# Koji Japanese Coaching — Version 2.0
+# Koji Japanese Coaching Version 2.1
 
-Production URL: https://nimble-shortbread-ea1a37.netlify.app
+## Language quality update
+- Full UI localization for 12 languages
+- Locale-specific blog, resources, privacy, legal, and analytics pages
+- No English fallback in Japanese navigation, buttons, lesson finder, consent, or cards
+- Localized email subject and WhatsApp opening message
+- Locale-specific metadata and canonical URLs
+- Updated sitemap with 96 localized URLs
 
-## Implemented
-- Premium dark navy and gold responsive design
-- Motion with reduced-motion accessibility support
-- 12 localized landing-page URLs with hreflang
-- Direct Email, WhatsApp, and LINE conversion paths
-- Consent-controlled GA4 and Microsoft Clarity
-- GA4 events: contact_click, language_switch, scroll_90, lesson_finder_complete
-- Search Console verification
-- Structured data, sitemap, robots, canonical and Open Graph
-- Rule-based lesson finder with transparent disclosure
-- Blog and free-resource foundation
-- Privacy, legal, and analytics settings pages
-- Netlify security/cache headers
-- GitHub Actions quality checks
+## Deploy
+Replace the repository root contents with this package and push to `main`. Netlify should publish automatically.
 
-## Recommended Git workflow
-- `main`: production
-- `develop`: staging and edits
-- Pull request from `develop` to `main`
-- Netlify production deploy from `main`
-- Optional Netlify branch deploy from `develop`
+## Verify
+1. Open `/ja/` and confirm all visible UI is Japanese.
+2. Switch through all 12 languages.
+3. Complete the lesson finder in each language.
+4. Open one article and one resource in each language.
+5. Confirm consent, email, WhatsApp, and LINE actions.
+6. Submit the updated sitemap in Search Console.
 
-## Verification after deployment
-1. Open page in a private browser and accept analytics.
-2. GA4 Admin > DebugView or Realtime: confirm page_view.
-3. Click Email, WhatsApp, and LINE: confirm contact_click.
-4. Complete lesson finder: confirm lesson_finder_complete.
-5. Search Console: verify ownership, then submit `sitemap.xml`.
-6. Clarity: wait for the first consented session and confirm recordings.
+See `LANGUAGE_AUDIT.md` for the audit scope.

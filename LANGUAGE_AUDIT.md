@@ -13,3 +13,6 @@ The following remain unchanged because they are product or brand names: Koji, Em
 ## Automated checks
 - Japanese known-English-string check: PASS
 - Generated HTML pages: 110
+
+## Version 2.2 profile localization
+The coach profile section, navigation label, role, biography, image alternative text, trust points, and consultation CTA were localized for all 12 languages. The Japanese name is fixed as **松下 剛治**, with **Koji Matsushita** used internationally.

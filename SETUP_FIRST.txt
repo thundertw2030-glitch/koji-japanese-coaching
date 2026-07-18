@@ -1,0 +1,17 @@
+KOJI JAPANESE COACHING — PUBLICATION GUIDE
+
+Contact information already configured:
+Email: thundertw2030@gmail.com
+WhatsApp: +81 90-3056-2663
+LINE: https://line.me/ti/p/GfZmB69ify
+
+Before publishing:
+1. Replace https://YOUR-SITE.netlify.app across all files after Netlify assigns the final URL.
+2. Review lesson descriptions and decide prices/payment/cancellation terms.
+3. Replace the sample instructor image with your own portrait when available.
+4. Confirm that direct-contact links open correctly on both phone and computer.
+5. Configure a custom domain and Google Search Console when ready.
+
+Publishing:
+- Upload this extracted folder to Netlify.
+- After the final domain is known, replace the placeholder domain and upload again.

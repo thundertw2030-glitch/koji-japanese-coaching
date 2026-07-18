@@ -1,18 +1,33 @@
-# Koji Japanese Coaching — Premium Direct Contact LP
+# Koji Japanese Coaching — Version 2.0
 
-## Contact-first design
-- Email: thundertw2030@gmail.com
-- WhatsApp: +81 90-3056-2663
-- LINE: https://line.me/ti/p/GfZmB69ify
+Production URL: https://nimble-shortbread-ea1a37.netlify.app
 
-## Included
-- Premium navy-and-gold responsive design
-- Rich photography and lesson cards
-- 12 language-specific URLs
-- One-tap Email, WhatsApp, and LINE contact
-- Desktop floating contacts and mobile contact bar
-- SEO metadata, canonical, hreflang, sitemap, robots, JSON-LD
-- Privacy and legal/service disclosure pages
-- No fabricated student testimonials or unsupported performance claims
+## Implemented
+- Premium dark navy and gold responsive design
+- Motion with reduced-motion accessibility support
+- 12 localized landing-page URLs with hreflang
+- Direct Email, WhatsApp, and LINE conversion paths
+- Consent-controlled GA4 and Microsoft Clarity
+- GA4 events: contact_click, language_switch, scroll_90, lesson_finder_complete
+- Search Console verification
+- Structured data, sitemap, robots, canonical and Open Graph
+- Rule-based lesson finder with transparent disclosure
+- Blog and free-resource foundation
+- Privacy, legal, and analytics settings pages
+- Netlify security/cache headers
+- GitHub Actions quality checks
 
-Open `SETUP_FIRST.txt` before deployment.
+## Recommended Git workflow
+- `main`: production
+- `develop`: staging and edits
+- Pull request from `develop` to `main`
+- Netlify production deploy from `main`
+- Optional Netlify branch deploy from `develop`
+
+## Verification after deployment
+1. Open page in a private browser and accept analytics.
+2. GA4 Admin > DebugView or Realtime: confirm page_view.
+3. Click Email, WhatsApp, and LINE: confirm contact_click.
+4. Complete lesson finder: confirm lesson_finder_complete.
+5. Search Console: verify ownership, then submit `sitemap.xml`.
+6. Clarity: wait for the first consented session and confirm recordings.

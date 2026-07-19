@@ -1,37 +1,40 @@
-# Koji Japanese Coaching Version 3.1 — Display Stable Edition
+# Koji Japanese Coaching Version 3.2 — Responsive Refined Edition
 
-松下 剛治（Koji Matsushita）の日本語・就職面接コーチングサイトです。Version 3.0のブランドデザインを維持しながら、公開環境で起こり得るCSS・JavaScriptの不整合とレスポンシブ表示を修正しています。
+松下 剛治（Koji Matsushita）の日本語・就職面接コーチングサイトです。
 
-## Version 3.1の重要な修正
+Version 3.2では、Version 3.1の表示安定性を維持しながら、トップページの写真配置、タブレット表示、プロフィール、固定問い合わせ導線、スマートフォンUIを全面的に再調整しました。
 
-- CSS・JavaScript・設定ファイルをVersion 3.1専用名へ変更し、旧キャッシュとの混在を防止
-- Netlifyの1年間immutableキャッシュを廃止し、更新時に再検証する設定へ変更
-- `localStorage`が制限されたブラウザでもJavaScript全体が停止しないよう修正
-- JavaScriptが失敗しても写真・カード・本文が非表示にならない構造へ変更
-- 画像の高さ自動調整を追加し、スマートフォンでプロフィール写真が縦に伸びる問題を修正
-- 320px幅を含む狭いスマートフォン向けの表示を調整
-- ドイツ語など長い言語名が言語選択欄で切れにくいよう改善
-- GitHub Actionsの検査対象を新しいファイル名へ更新
+## Version 3.2の主な改善
+
+- トップの講師写真を小型の正方形カードへ変更
+- 詳細プロフィールの写真とトップ写真の重複感を軽減
+- 721〜1080pxでプロフィールを横並びに維持
+- プロフィール写真の最大サイズを縮小
+- 日本語の「自己PR」「1対1」「IT・技術職」の不自然な改行を防止
+- PC・タブレットの固定問い合わせボタンを小型化
+- スマートフォンの問い合わせ導線を下部ドックへ変更
+- メニュー切替幅を1080pxへ変更
+- アンカー移動時に固定ヘッダーが内容を隠さないよう調整
+- CSS・JavaScriptをVersion 3.2専用名に変更
 
 ## 公開方法
 
-このフォルダの「中身」をGitHubリポジトリのルートへ上書きし、`main`ブランチへ反映してください。フォルダ自体を1階層追加しないよう注意してください。
+ZIPを解凍し、フォルダの中身をGitHubリポジトリのルートへ上書きしてください。`main`ブランチへの反映後、Netlifyが自動公開します。
 
-新しいファイル名を使用しているため、古い`style.css`や`site.js`がブラウザに残っていてもVersion 3.1と混在しません。
+## 主要ファイル
 
-## 公開後に確認するページ
+- `assets/style.v3.2.css`
+- `assets/site.v3.2.js`
+- `assets/config.v3.2.js`
+- `QA_REPORT.md`
+- `RESPONSIVE_REFINEMENT.md`
+- `DEPLOYMENT_CHECKLIST.md`
+- `VIDEO_INTEGRATION.md`
 
-- `/ja/`
-- `/en/`
-- `/de/`
-- `/th/`
-- `/sitemap.xml`
-- `/robots.txt`
+## デザイン確認画像
 
-## 関連資料
-
-- `DISPLAY_STABILITY_FIX.md`：表示崩れの原因と修正内容
-- `QA_REPORT.md`：全体検査結果
-- `DEPLOYMENT_CHECKLIST.md`：公開後の確認手順
-- `VIDEO_INTEGRATION.md`：紹介動画の追加手順
-- `LANGUAGE_AUDIT.md`：言語監査
+- `DESIGN_REFERENCE.png`：PC
+- `DESIGN_REFERENCE_TABLET.png`：タブレット
+- `DESIGN_REFERENCE_MOBILE.png`：スマートフォン
+- `DISPLAY_CHECK_PROFILE_TABLET.png`：タブレットのプロフィール
+- `DISPLAY_CHECK_PROFILE_MOBILE.png`：スマートフォンのプロフィール

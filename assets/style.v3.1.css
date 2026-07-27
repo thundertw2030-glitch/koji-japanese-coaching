@@ -95,7 +95,7 @@ button:focus-visible, a:focus-visible, select:focus-visible {
 .brand { display: inline-flex; align-items: center; color: #fff; }
 .brand:not(.brandLockup) { margin-right: auto; font-family: Georgia, "Times New Roman", serif; font-size: 29px; font-weight: 700; }
 .brand:not(.brandLockup) span { color: var(--gold); }
-.brandLockup { min-width: 235px; gap: 11px; margin-right: auto; }
+.brandLockup { min-width: 285px; gap: 11px; margin-right: auto; }
 .brandMark {
   width: 42px;
   height: 42px;
@@ -105,14 +105,15 @@ button:focus-visible, a:focus-visible, select:focus-visible {
   background: linear-gradient(145deg, rgba(255,255,255,.18), rgba(255,255,255,.05));
   border: 1px solid rgba(255,255,255,.26);
   color: #fff;
-  font-family: Georgia, serif;
-  font-size: 22px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  letter-spacing: -.04em;
   font-weight: 700;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
 }
-.brandMark.small { width: 34px; height: 34px; border-radius: 10px; font-size: 18px; }
+.brandMark.small { width: 44px; height: 34px; border-radius: 10px; font-size: 9px; }
 .brandWords { display: grid; line-height: 1.05; }
-.brandWords strong { font-family: Georgia, "Times New Roman", serif; font-size: 25px; letter-spacing: -.02em; }
+.brandWords strong { font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 18px; letter-spacing: -.025em; white-space: nowrap; }
 .brandWords strong span { color: var(--gold); }
 .brandWords small { margin-top: 5px; max-width: 205px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: rgba(255,255,255,.66); font-size: 9px; font-weight: 750; letter-spacing: .08em; }
 .nav { display: flex; align-items: center; gap: clamp(12px, 1.45vw, 23px); }
@@ -585,4 +586,13 @@ a:hover .linkIcon { transform: translateX(4px); }
   .section h2, .contact h2 { font-size: clamp(31px, 9vw, 42px); }
   .consentActions { display: grid; grid-template-columns: 1fr 1fr; }
   .consent button { width: 100%; }
+}
+
+/* Privacy-safe brand profile icon */
+.heroPortrait img,.contactCoach img{object-fit:contain;background:#eaf4fb;}
+
+/* JCG long brand-name responsive adjustment */
+@media (max-width: 720px) {
+  .brandWords strong { font-size: 16px; }
+  .brandLockup { gap: 8px; }
 }

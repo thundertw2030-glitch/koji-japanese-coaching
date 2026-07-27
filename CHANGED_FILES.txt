@@ -1,0 +1,35 @@
+Privacy update package
+
+Main changes:
+- Removed personal legal name from HTML, metadata, structured data, and repository documentation
+- Replaced portrait assets with a privacy-safe illustrated profile icon
+- Changed email to japancareer.support@gmail.com
+- Rebranded public-facing name as Japan Career Support / JCG
+- Removed old portrait files and old screenshots
+- Updated OGP image and favicon
+- Replaced Person/founder schema with ProfessionalService/Organization schema
+
+Updated language homepages:
+- ja/index.html
+- en/index.html
+- zh-tw/index.html
+- zh-cn/index.html
+- ko/index.html
+- id/index.html
+- th/index.html
+- de/index.html
+- fr/index.html
+- it/index.html
+- es/index.html
+- pt/index.html
+
+Key files:
+- assets/profile-icon.png
+- assets/profile-icon.webp
+- assets/profile-icon.jpg
+- assets/jcs-brand-og.jpg
+- assets/favicon.svg
+- assets/config.v3.2.js
+- assets/style.v3.2.css
+- PRIVACY_UPDATE.md
+- GITHUB_UPLOAD_GUIDE_JA.txt

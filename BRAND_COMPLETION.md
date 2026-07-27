@@ -1,45 +1,28 @@
-# Version 3.0 ブランド完成版
+# Japan Career Support — Brand and privacy completion
 
-## 実施内容
+## Brand
 
-### 世界レベルのトップページ
-- 写真中心ではなく「講師本人と価値提案」を中心にしたファーストビュー
-- 深いネイビー、落ち着いたゴールド、余白を基調とするブランドデザイン
-- 相談とレッスン確認の2つにCTAを整理
-- 採用面談、個別設計、ロールプレイ、オンライン対応の価値を明確化
-- 問い合わせ直前にも講師写真と支援内容を再提示
+- Public brand: **Japan Career Support**
+- Short mark: **JCG**
+- Main colors: deep navy, muted gold, teal accent
+- Public identity is service-based rather than person-name-based
 
-### プロ品質のプロフィール
-- 正式表記：松下 剛治 / Koji Matsushita
-- 肩書き：日本語・就職面接コーチ
-- 採用面談・人材育成の視点、個別設計、実践ロールプレイを整理
-- Hero、プロフィール、問い合わせの3箇所で一貫した人物紹介
-- Person / ProfessionalService構造化データの写真を更新
+## Profile image
 
-### 写真の統一
-- プロフィール写真を正方形・4:5の用途別に最適化
-- 720px / 1080pxのWebPとJPEGフォールバックを用意
-- サービス写真を16:10比率に統一
-- 彩度、コントラスト、トーンを共通化
-- 記事・教材ページの代表画像もブランド画像へ統一
-- 新しいOGP画像を作成
+- `assets/profile-icon.webp` — recommended website format
+- `assets/profile-icon.png` — transparent-background version
+- `assets/profile-icon.jpg` — fallback format
+- The original face-photo assets have been removed from the repository
 
-### アイコン・色・余白
-- 外部ライブラリに依存しないSVGアイコンシステム
-- ナビゲーション、強み、サービス、診断、問い合わせに統一アイコンを配置
-- 色、角丸、影、余白をCSS変数で体系化
-- カード構成と見出し階層を統一
+## Metadata and search
 
-### スマートフォンUI
-- 390px幅で横スクロールが発生しないことを確認
-- タップ領域を原則40〜52pxに設定
-- 全画面を覆わないモバイルメニュー
-- CTAを縦配置し、読みやすい見出しサイズに調整
-- Email・WhatsApp・LINEの固定連絡バー
-- モバイル向けカード1列表示、画像比率、余白を調整
+- Page titles and social metadata use Japan Career Support
+- OGP image: `assets/jcs-brand-og.jpg`
+- Structured data uses ProfessionalService / Organization
+- Article author and publisher use Japan Career Support
+- Personal-name Person schema has been removed
 
-### 紹介動画
-- 12言語分の動画セクションを実装済み
-- 動画未準備の間はサイト上に未完成表示を出さず非表示
-- MP4配置と一括有効化のスクリプトを同梱
-- 詳細は `VIDEO_INTEGRATION.md`
+## Contact
+
+- Email: `japancareer.support@gmail.com`
+- WhatsApp and LINE settings are unchanged

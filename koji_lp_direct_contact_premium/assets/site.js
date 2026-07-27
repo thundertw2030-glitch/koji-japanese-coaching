@@ -7,7 +7,7 @@
   });
   document.querySelectorAll('[data-email-text]').forEach(el => el.textContent = c.email || '');
   document.querySelectorAll('[data-whatsapp-link]').forEach(a => {
-    const msg = encodeURIComponent(a.dataset.message || 'Hello Koji, I am interested in a Japanese lesson.');
+    const msg = encodeURIComponent(a.dataset.message || 'Hello Japan Career Support, I am interested in a Japanese lesson.');
     a.href = `${c.whatsappUrl}?text=${msg}`;
     a.target = '_blank'; a.rel = 'noopener noreferrer';
   });

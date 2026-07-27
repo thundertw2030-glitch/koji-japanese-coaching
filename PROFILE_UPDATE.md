@@ -1,10 +1,18 @@
-# Profile update — Version 2.2
+# Privacy-safe profile update
 
-## Reflected information
-- Japanese name: **松下 剛治**
-- International name: **Koji Matsushita**
-- Japanese title: **日本語・就職面接コーチ**
-- The supplied photograph is used only as the coach profile photograph.
+## Current public identity
 
-## Pages updated
-All 12 language homepages now include a localized profile section and an “About Koji” navigation item. Person structured data also includes the corrected name and profile image.
+- Brand name: **Japan Career Support**
+- Public contact email: **japancareer.support@gmail.com**
+- Public profile image: privacy-safe illustrated icon
+- Personal legal name: not published
+
+## Technical changes
+
+- Removed personal-name text from all language pages
+- Removed Person/founder structured data
+- Updated ProfessionalService and Article publisher/author data
+- Updated profile images, OGP image, favicon, alt text, and preload references
+- Removed obsolete portrait files and old visual-review screenshots
+
+The public site now presents the service as a brand rather than a named individual.

@@ -1,7 +1,7 @@
-# Koji Japanese Coaching — Premium Direct Contact LP
+# Japan Career Support — Premium Direct Contact LP
 
 ## Contact-first design
-- Email: thundertw2030@gmail.com
+- Email: japancareer.support@gmail.com
 - WhatsApp: +81 90-3056-2663
 - LINE: https://line.me/ti/p/GfZmB69ify
 

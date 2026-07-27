@@ -1,17 +1,24 @@
-KOJI JAPANESE COACHING — PUBLICATION GUIDE
+JAPAN CAREER SUPPORT — PUBLICATION GUIDE
 
-Contact information already configured:
-Email: thundertw2030@gmail.com
+Configured contact information:
+Email: japancareer.support@gmail.com
 WhatsApp: +81 90-3056-2663
 LINE: https://line.me/ti/p/GfZmB69ify
 
-Before publishing:
-1. Replace https://YOUR-SITE.netlify.app across all files after Netlify assigns the final URL.
-2. Review lesson descriptions and decide prices/payment/cancellation terms.
-3. Replace the sample instructor image with your own portrait when available.
-4. Confirm that direct-contact links open correctly on both phone and computer.
-5. Configure a custom domain and Google Search Console when ready.
+Privacy-safe settings already completed:
+- Personal legal name removed
+- Face photo replaced with illustrated profile icon
+- Personal Person structured data removed
+- OGP and favicon updated
 
 Publishing:
-- Upload this extracted folder to Netlify.
-- After the final domain is known, replace the placeholder domain and upload again.
+1. Extract the updated ZIP.
+2. Upload/replace the repository files on GitHub.
+3. Commit to the main branch.
+4. Wait for Netlify deployment to complete.
+5. Confirm the profile icon and email link on desktop and mobile.
+6. Clear browser/CDN cache if the old image remains visible.
+
+Important:
+WhatsApp phone number and LINE link remain public because they were not part of the requested changes.
+Remove them from config files and page content before publishing if they should also be private.

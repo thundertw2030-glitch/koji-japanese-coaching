@@ -1,40 +1,38 @@
-# Koji Japanese Coaching Version 3.2 — Responsive Refined Edition
+# Japan Career Support Version 3.2 — Privacy-Safe Edition
 
-松下 剛治（Koji Matsushita）の日本語・就職面接コーチングサイトです。
+日本企業への就職・留学・ビジネス日本語を支援する、多言語対応のコーチングサイトです。
 
-Version 3.2では、Version 3.1の表示安定性を維持しながら、トップページの写真配置、タブレット表示、プロフィール、固定問い合わせ導線、スマートフォンUIを全面的に再調整しました。
+## 今回のプライバシー更新
 
-## Version 3.2の主な改善
-
-- トップの講師写真を小型の正方形カードへ変更
-- 詳細プロフィールの写真とトップ写真の重複感を軽減
-- 721〜1080pxでプロフィールを横並びに維持
-- プロフィール写真の最大サイズを縮小
-- 日本語の「自己PR」「1対1」「IT・技術職」の不自然な改行を防止
-- PC・タブレットの固定問い合わせボタンを小型化
-- スマートフォンの問い合わせ導線を下部ドックへ変更
-- メニュー切替幅を1080pxへ変更
-- アンカー移動時に固定ヘッダーが内容を隠さないよう調整
-- CSS・JavaScriptをVersion 3.2専用名に変更
+- 本名表記をサイト本文・メタ情報・構造化データ・リポジトリ文書から削除
+- 顔写真を本人と特定されにくいアイコン風プロフィール画像へ変更
+- 連絡先メールを `japancareer.support@gmail.com` に統一
+- ブランド名を **Japan Career Support** に統一
+- Person構造化データを削除し、ProfessionalService／Organization表記へ変更
+- OGP画像とfaviconをプライバシー対応版へ更新
+- 旧プロフィール写真と旧スクリーンショットを削除
 
 ## 公開方法
 
-ZIPを解凍し、フォルダの中身をGitHubリポジトリのルートへ上書きしてください。`main`ブランチへの反映後、Netlifyが自動公開します。
+ZIPを解凍し、フォルダ内のファイルをGitHubリポジトリのルートへ上書きしてください。
+`main` ブランチへ反映後、Netlifyが自動公開します。
 
 ## 主要ファイル
 
 - `assets/style.v3.2.css`
 - `assets/site.v3.2.js`
 - `assets/config.v3.2.js`
-- `QA_REPORT.md`
-- `RESPONSIVE_REFINEMENT.md`
+- `assets/profile-icon.webp`
+- `assets/profile-icon.png`
+- `assets/profile-icon.jpg`
+- `assets/jcs-brand-og.jpg`
+- `assets/favicon.svg`
+- `PRIVACY_UPDATE.md`
 - `DEPLOYMENT_CHECKLIST.md`
-- `VIDEO_INTEGRATION.md`
 
-## デザイン確認画像
+## 公開前の確認
 
-- `DESIGN_REFERENCE.png`：PC
-- `DESIGN_REFERENCE_TABLET.png`：タブレット
-- `DESIGN_REFERENCE_MOBILE.png`：スマートフォン
-- `DISPLAY_CHECK_PROFILE_TABLET.png`：タブレットのプロフィール
-- `DISPLAY_CHECK_PROFILE_MOBILE.png`：スマートフォンのプロフィール
+1. GitHubへ上書き後、Netlifyのデプロイ完了を待つ
+2. 日本語・英語ページのプロフィール画像とメールリンクを確認
+3. ブラウザのキャッシュを削除して旧画像が表示されないか確認
+4. Google検索結果の古い氏名は、再クロール後に順次更新される

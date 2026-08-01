@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JCG">
+  <rect width="64" height="64" rx="16" fill="#07192f"/>
+  <path d="M46 10h10v10M55 11 43 23" fill="none" stroke="#0aa3ac" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="31" y="41" text-anchor="middle" fill="#f8f4ec" font-family="Arial, sans-serif" font-size="18" font-weight="700">JCG</text>
+  <circle cx="52" cy="50" r="4" fill="#c9a45f"/>
+</svg>

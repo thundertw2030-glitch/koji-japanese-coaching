@@ -1,6 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JCG">
-  <rect width="64" height="64" rx="16" fill="#07192f"/>
-  <path d="M46 10h10v10M55 11 43 23" fill="none" stroke="#0aa3ac" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="31" y="41" text-anchor="middle" fill="#f8f4ec" font-family="Arial, sans-serif" font-size="18" font-weight="700">JCG</text>
-  <circle cx="52" cy="50" r="4" fill="#c9a45f"/>
-</svg>
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>분석 설정 | Japan Career Support</title><link href="../assets/style.v3.2.css" rel="stylesheet"/><link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#07192f" name="theme-color"/></head><body><main class="container article"><a href="./">← 수업 보기</a><h1>분석 설정</h1><h2>분석 설정</h2><p>방문 분석을 위해 쿠키를 사용합니다. GA4와 Microsoft Clarity는 동의 후에만 불러옵니다.</p><button class="btn gold" onclick="localStorage.removeItem('koji_analytics_consent');location.reload()">분석 설정</button></main></body></html>

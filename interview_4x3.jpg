@@ -1,13 +1,1 @@
-window.KOJI_CONFIG = {
-  siteUrl: "https://nimble-shortbread-ea1a37.netlify.app",
-  email: "japancareer.support@gmail.com",
-  instagramUrl: "https://www.instagram.com/japancareer.support/",
-  instagramHandle: "@japancareer.support",
-  whatsappUrl: "https://wa.me/819030562663",
-  whatsappDisplay: "+81 90-3056-2663",
-  lineUrl: "https://line.me/ti/p/GfZmB69ify",
-  gaMeasurementId: "G-GWQ16V9P2J",
-  clarityProjectId: "xoeg2xrf8y",
-  brandVersion: "3.0",
-  introVideoEnabled: false
-};
+<!doctype html><html lang="ja"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex,nofollow"/><title>お問い合わせを受け付けました | Japan Career Support</title><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="../assets/style.v3.2.css"/><meta name="theme-color" content="#07192f"/></head><body><main class="thanksPage"><section class="thanksCard"><div class="thanksMark" aria-hidden="true">✓</div><div class="kicker">Japan Career Support</div><h1>お問い合わせを受け付けました</h1><p>内容を確認し、入力いただいたメールアドレスへご連絡します。</p><div class="thanksActions"><a class="btn gold" href="./">トップページへ戻る</a><a class="btn secondary" href="https://www.instagram.com/japancareer.support/" target="_blank" rel="noopener noreferrer">Instagramを見る</a></div></section></main></body></html>

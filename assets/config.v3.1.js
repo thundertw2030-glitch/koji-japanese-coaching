@@ -1,6 +1,8 @@
 window.KOJI_CONFIG = {
   siteUrl: "https://nimble-shortbread-ea1a37.netlify.app",
   email: "japancareer.support@gmail.com",
+  instagramUrl: "https://www.instagram.com/japancareer.support/",
+  instagramHandle: "@japancareer.support",
   whatsappUrl: "https://wa.me/819030562663",
   whatsappDisplay: "+81 90-3056-2663",
   lineUrl: "https://line.me/ti/p/GfZmB69ify",

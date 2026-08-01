@@ -578,3 +578,38 @@ a:hover .linkIcon { transform: translateX(4px); }
   .brandWords strong { font-size: 16px; }
   .brandLockup { gap: 8px; }
 }
+
+
+/* Instagram integration */
+.footerInstagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+  font-weight: 800;
+}
+.footerInstagram::before {
+  content: "IG";
+  display: inline-grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b 55%, #6228d7);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 950;
+}
+.instagramIcon {
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b 55%, #6228d7);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 950;
+}
+.contactCard.instagram > a {
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b 55%, #6228d7);
+  color: #fff;
+}
+.contactCard.instagram > a:hover {
+  filter: brightness(1.06);
+}

@@ -60,6 +60,67 @@
     consentBox?.classList.remove('show');
   });
 
+
+  const instagramCopy = {
+    ja: 'Instagramを見る',
+    en: 'Open Instagram',
+    'zh-tw': '查看 Instagram',
+    'zh-cn': '查看 Instagram',
+    ko: 'Instagram 보기',
+    id: 'Buka Instagram',
+    th: 'เปิด Instagram',
+    de: 'Instagram öffnen',
+    fr: 'Voir Instagram',
+    it: 'Apri Instagram',
+    es: 'Abrir Instagram',
+    pt: 'Abrir Instagram',
+  };
+
+  const pageLang = (document.documentElement.lang || 'en').toLowerCase();
+  const instagramCta =
+    instagramCopy[pageLang] ||
+    instagramCopy[pageLang.split('-')[0]] ||
+    instagramCopy.en;
+
+  if (C.instagramUrl) {
+    const nav = $('#nav');
+    if (nav && !nav.querySelector('.navInstagram')) {
+      const navLink = document.createElement('a');
+      navLink.className = 'navInstagram';
+      navLink.dataset.contact = 'instagram';
+      navLink.target = '_blank';
+      navLink.rel = 'noopener noreferrer';
+      navLink.textContent = 'Instagram';
+      nav.appendChild(navLink);
+    }
+
+    const contactGrid = $('.contactGrid');
+    if (contactGrid && !contactGrid.querySelector('.contactCard.instagram')) {
+      const card = document.createElement('div');
+      card.className = 'contactCard instagram';
+      card.innerHTML = `
+        <span class="contactIcon instagramIcon" aria-hidden="true">IG</span>
+        <strong>Instagram</strong>
+        <small>${C.instagramHandle || '@japancareer.support'}</small>
+        <a data-contact="instagram" target="_blank" rel="noopener noreferrer">
+          ${instagramCta} →
+          <svg aria-hidden="true" class="linkIcon"><use href="#i-arrow"></use></svg>
+        </a>`;
+      contactGrid.appendChild(card);
+    }
+
+    const footer = $('.foot');
+    if (footer && !footer.querySelector('.footerInstagram')) {
+      const footerLink = document.createElement('a');
+      footerLink.className = 'footerInstagram';
+      footerLink.dataset.contact = 'instagram';
+      footerLink.target = '_blank';
+      footerLink.rel = 'noopener noreferrer';
+      footerLink.textContent = `Instagram ${C.instagramHandle || '@japancareer.support'}`;
+      footer.appendChild(footerLink);
+    }
+  }
+
   $$('[data-contact]').forEach((link) => {
     const type = link.dataset.contact;
     const subject = document.body.dataset.subject || '';
@@ -67,6 +128,7 @@
     if (type === 'email' && C.email) link.href = `mailto:${C.email}?subject=${encodeURIComponent(subject)}`;
     if (type === 'whatsapp' && C.whatsappUrl) link.href = `${C.whatsappUrl}?text=${encodeURIComponent(message)}`;
     if (type === 'line' && C.lineUrl) link.href = C.lineUrl;
+    if (type === 'instagram' && C.instagramUrl) link.href = C.instagramUrl;
     link.addEventListener('click', () => track('contact_click', {
       contact_method: type,
       page_language: document.documentElement.lang,

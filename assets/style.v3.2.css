@@ -1012,3 +1012,15 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 16px); }
   .formSubmitRow { align-items: stretch; flex-direction: column; }
   .formSubmit { width: 100%; }
 }
+
+/* Form input interaction safeguard */
+.contact { isolation: isolate; }
+.contact::before { z-index: 0; pointer-events: none !important; }
+.contact > .container,
+.contact .consultationFormWrap { position: relative; z-index: 2; }
+.consultationForm,
+.consultationForm input,
+.consultationForm select,
+.consultationForm textarea,
+.consultationForm button { pointer-events: auto !important; }
+.formHoneypot { display: none !important; }

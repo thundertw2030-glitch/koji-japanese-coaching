@@ -12,7 +12,216 @@
 <link href="https://nimble-shortbread-ea1a37.netlify.app/it/" hreflang="it" rel="alternate"/>
 <link href="https://nimble-shortbread-ea1a37.netlify.app/es/" hreflang="es" rel="alternate"/>
 <link href="https://nimble-shortbread-ea1a37.netlify.app/pt/" hreflang="pt" rel="alternate"/>
-<link href="https://nimble-shortbread-ea1a37.netlify.app/en/" hreflang="x-default" rel="alternate"/><meta content="website" property="og:type"/><meta content="日本就職・留学・ビジネス日本語コーチング｜Japan Career Support" property="og:title"/><meta content="日本企業の面接、留学面接、ビジネス日本語、IT・技術職のコミュニケーションを実践的に個別指導します。" property="og:description"/><meta content="https://nimble-shortbread-ea1a37.netlify.app/ja/" property="og:url"/><meta content="https://nimble-shortbread-ea1a37.netlify.app/assets/jcs-brand-og.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="#07192f" name="theme-color"/><link href="../assets/style.v3.2.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Japan Career Support","url":"https://nimble-shortbread-ea1a37.netlify.app/ja/","email":"japancareer.support@gmail.com","telephone":"+819030562663","description":"日本企業の面接、留学面接、ビジネス日本語、IT・技術職のコミュニケーションを実践的に個別指導します。","areaServed":"Worldwide","availableLanguage":["日本語","English","繁體中文","简体中文","한국어","Bahasa Indonesia","ไทย","Deutsch","Français","Italiano","Español","Português"],"image":"https://nimble-shortbread-ea1a37.netlify.app/assets/jcs-brand-og.jpg","logo":"https://nimble-shortbread-ea1a37.netlify.app/assets/profile-icon.webp"}</script><link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/><link as="image" href="../assets/profile-icon.webp" rel="preload" type="image/webp"/></head><body class="brandV3" data-subject="日本語コーチングの相談" data-wamsg="こんにちは。日本語コーチングについて相談したいです。"><a class="skip" href="#main">本文へ移動</a><svg aria-hidden="true" class="iconSprite" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<link href="https://nimble-shortbread-ea1a37.netlify.app/en/" hreflang="x-default" rel="alternate"/><meta content="website" property="og:type"/><meta content="日本就職・留学・ビジネス日本語コーチング｜Japan Career Support" property="og:title"/><meta content="日本企業の面接、留学面接、ビジネス日本語、IT・技術職のコミュニケーションを実践的に個別指導します。" property="og:description"/><meta content="https://nimble-shortbread-ea1a37.netlify.app/ja/" property="og:url"/><meta content="https://nimble-shortbread-ea1a37.netlify.app/assets/jcs-brand-og.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="#07192f" name="theme-color"/><link href="../assets/style.v3.2.css?v=20260801-formfix3" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Japan Career Support","url":"https://nimble-shortbread-ea1a37.netlify.app/ja/","email":"japancareer.support@gmail.com","telephone":"+819030562663","description":"日本企業の面接、留学面接、ビジネス日本語、IT・技術職のコミュニケーションを実践的に個別指導します。","areaServed":"Worldwide","availableLanguage":["日本語","English","繁體中文","简体中文","한국어","Bahasa Indonesia","ไทย","Deutsch","Français","Italiano","Español","Português"],"image":"https://nimble-shortbread-ea1a37.netlify.app/assets/jcs-brand-og.jpg","logo":"https://nimble-shortbread-ea1a37.netlify.app/assets/profile-icon.webp"}</script><link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/><link as="image" href="../assets/profile-icon.webp" rel="preload" type="image/webp"/>
+<style id="consultation-form-critical-fix">
+/* Critical form styles are embedded to avoid stale mobile CSS caches. */
+.contact {
+  isolation: isolate;
+}
+.contact::before {
+  z-index: 0;
+  pointer-events: none !important;
+}
+.contact > .container,
+.contact .consultationFormWrap {
+  position: relative;
+  z-index: 2;
+}
+.consultationFormWrap {
+  margin-top: clamp(40px, 6vw, 72px);
+  padding: clamp(24px, 4vw, 46px);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 28px;
+  background: #ffffff;
+  color: #17233a;
+  box-shadow: 0 24px 70px rgba(0,0,0,.24);
+  pointer-events: auto !important;
+}
+.consultationFormHead {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(260px,.72fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+.consultationFormHead .kicker {
+  margin: 0 0 8px;
+  color: #8b641e;
+}
+.consultationFormHead h3 {
+  margin: 0;
+  color: #082f63;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px,4vw,46px);
+  line-height: 1.18;
+}
+.consultationFormHead p {
+  margin: 0;
+  color: #52657a;
+  line-height: 1.8;
+}
+.consultationForm,
+.formGrid,
+.formField,
+.formPrivacy,
+.formSubmitRow {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto !important;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px 22px;
+}
+.formField {
+  display: grid;
+  gap: 8px;
+}
+.formField.full {
+  grid-column: 1 / -1;
+}
+.formField label {
+  color: #082f63;
+  font-size: 13px;
+  font-weight: 900;
+}
+.formRequired {
+  margin-left: 4px;
+  color: #b33737;
+}
+.formField input,
+.formField select,
+.formField textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 14px;
+  border: 1px solid #c9d7e0;
+  border-radius: 12px;
+  background: #fbfdff;
+  color: #17233a;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+  outline: none;
+  opacity: 1;
+  pointer-events: auto !important;
+  touch-action: manipulation;
+  -webkit-user-select: text;
+  user-select: text;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.formField select {
+  background-image:
+    linear-gradient(45deg,transparent 50%,#536579 50%),
+    linear-gradient(135deg,#536579 50%,transparent 50%);
+  background-position:
+    calc(100% - 18px) 22px,
+    calc(100% - 12px) 22px;
+  background-size: 6px 6px,6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.formField textarea {
+  min-height: 170px;
+  resize: vertical;
+  line-height: 1.7;
+}
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+  border-color: #a77b2a;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(201,164,95,.16);
+}
+.formField input::placeholder,
+.formField textarea::placeholder {
+  color: #8a9aab;
+  opacity: 1;
+}
+.formPrivacy {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px 16px;
+  border-radius: 12px;
+  background: #f5f7f9;
+  color: #536579;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.formPrivacy input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0;
+  accent-color: #082f63;
+  pointer-events: auto !important;
+}
+.formPrivacy a {
+  color: #8b641e;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.formSubmitRow {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.formSubmit {
+  min-height: 54px;
+  padding: 0 24px;
+  border: 1px solid #c9a45f;
+  border-radius: 12px;
+  background: #c9a45f;
+  color: #06172b;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 950;
+  cursor: pointer;
+  pointer-events: auto !important;
+  touch-action: manipulation;
+}
+.formNote {
+  max-width: 520px;
+  margin: 0;
+  color: #64768a;
+  font-size: 11px;
+}
+.formHoneypot {
+  display: none !important;
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+@media (max-width:760px) {
+  .consultationFormHead,
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .formField.full,
+  .formPrivacy,
+  .formSubmitRow {
+    grid-column: 1;
+  }
+  .formSubmitRow {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .formSubmit {
+    width: 100%;
+  }
+}
+</style>
+</head><body class="brandV3" data-subject="日本語コーチングの相談" data-wamsg="こんにちは。日本語コーチングについて相談したいです。"><a class="skip" href="#main">本文へ移動</a><svg aria-hidden="true" class="iconSprite" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <symbol id="i-menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
 <symbol id="i-close" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
 <symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
@@ -42,7 +251,7 @@
 <div class="consultationFormHead"><div><div class="kicker">安全な相談フォーム</div><h3>相談内容をフォームで送る</h3></div><p>現在の状況と希望するサポートをお知らせください。内容を確認し、メールでご連絡します。</p></div>
 <form class="consultationForm" name="career-consultation" method="POST" action="./thanks.html" data-netlify="true" netlify-honeypot="bot-field">
 <input type="hidden" name="form-name" value="career-consultation"/><input type="hidden" name="page-language" value="ja"/><input type="hidden" name="source-page" value="/ja/"/>
-<p class="formHoneypot"><label>Do not fill this field if you are human: <input name="bot-field" type="text" tabindex="-1" autocomplete="off"/></label></p>
+<p class="formHoneypot" aria-hidden="true" style="display:none!important;position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important;"><label>Do not fill this field if you are human: <input name="bot-field" type="text" tabindex="-1" autocomplete="off"/></label></p>
 <div class="formGrid">
 <div class="formField"><label for="consult-name-ja">お名前<span class="formRequired" aria-hidden="true">*</span></label><input id="consult-name-ja" name="name" type="text" maxlength="100" autocomplete="name" placeholder="お名前またはニックネーム" required/></div>
 <div class="formField"><label for="consult-email-ja">メールアドレス<span class="formRequired" aria-hidden="true">*</span></label><input id="consult-email-ja" name="email" type="email" maxlength="200" autocomplete="email" inputmode="email" placeholder="your@email.com" required/></div>
@@ -53,4 +262,4 @@
 <div class="formField full"><label for="consult-message-ja">相談内容<span class="formRequired" aria-hidden="true">*</span></label><textarea id="consult-message-ja" name="message" maxlength="2500" placeholder="目標、現在の状況、困っていること、希望するサポートをご記入ください。" required></textarea></div>
 <label class="formPrivacy"><input name="privacy-consent" type="checkbox" value="agreed" required/><span>入力した情報が、お問い合わせへの回答のために利用されることに同意します。 <a href="./privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a></span></label>
 <div class="formSubmitRow"><button class="formSubmit" type="submit">相談内容を送信する →</button><p class="formNote">送信後、入力したメールアドレスへご連絡します。</p></div>
-</div></form></div></section></main><footer class="footer"><div class="container foot"><a class="footerBrand" href="./"><span class="brandMark small">JCG</span><strong>Japan Career Support</strong></a><span>© 2026 Japan Career Support · 日本就職・留学・ビジネス日本語の個別コーチング</span><span><a href="./privacy.html">プライバシー</a> · <a href="./legal.html">サービス表示</a> · <a href="./analytics.html">解析設定</a></span><a class="footerInstagram" href="https://www.instagram.com/japancareer.support/" target="_blank" rel="noopener noreferrer">Instagram @japancareer.support</a></div></footer><div class="floats"><a aria-label="メールで相談する" class="float email" data-contact="email"><svg aria-hidden="true" class="floatIcon"><use href="#i-mail"></use></svg><span>Email</span></a><a aria-label="WhatsApp" class="float wa" data-contact="whatsapp" target="_blank"><svg aria-hidden="true" class="floatIcon"><use href="#i-phone"></use></svg><span>WhatsApp</span></a><a aria-label="LINE" class="float line" data-contact="line" target="_blank"><svg aria-hidden="true" class="floatIcon"><use href="#i-line"></use></svg><span>LINE</span></a></div><div class="consent" id="consent"><div class="consentIcon"><svg aria-hidden="true" class="icon"><use href="#i-shield"></use></svg></div><p>アクセス解析のためCookieを利用します。GA4とMicrosoft Clarityは同意後にのみ読み込まれます。 <a href="./privacy.html"><u>プライバシー</u></a></p><div class="consentActions"><button class="accept" id="acceptCookies">同意する</button><button class="decline" id="declineCookies">拒否する</button></div></div><script src="../assets/config.v3.2.js"></script><script src="../assets/site.v3.2.js"></script></body></html>
+</div></form></div></section></main><footer class="footer"><div class="container foot"><a class="footerBrand" href="./"><span class="brandMark small">JCG</span><strong>Japan Career Support</strong></a><span>© 2026 Japan Career Support · 日本就職・留学・ビジネス日本語の個別コーチング</span><span><a href="./privacy.html">プライバシー</a> · <a href="./legal.html">サービス表示</a> · <a href="./analytics.html">解析設定</a></span><a class="footerInstagram" href="https://www.instagram.com/japancareer.support/" target="_blank" rel="noopener noreferrer">Instagram @japancareer.support</a></div></footer><div class="floats"><a aria-label="メールで相談する" class="float email" data-contact="email"><svg aria-hidden="true" class="floatIcon"><use href="#i-mail"></use></svg><span>Email</span></a><a aria-label="WhatsApp" class="float wa" data-contact="whatsapp" target="_blank"><svg aria-hidden="true" class="floatIcon"><use href="#i-phone"></use></svg><span>WhatsApp</span></a><a aria-label="LINE" class="float line" data-contact="line" target="_blank"><svg aria-hidden="true" class="floatIcon"><use href="#i-line"></use></svg><span>LINE</span></a></div><div class="consent" id="consent"><div class="consentIcon"><svg aria-hidden="true" class="icon"><use href="#i-shield"></use></svg></div><p>アクセス解析のためCookieを利用します。GA4とMicrosoft Clarityは同意後にのみ読み込まれます。 <a href="./privacy.html"><u>プライバシー</u></a></p><div class="consentActions"><button class="accept" id="acceptCookies">同意する</button><button class="decline" id="declineCookies">拒否する</button></div></div><script src="../assets/config.v3.2.js?v=20260801-formfix3"></script><script src="../assets/site.v3.2.js?v=20260801-formfix3"></script></body></html>

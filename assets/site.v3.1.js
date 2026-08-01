@@ -186,4 +186,91 @@
     }
     videoSection.hidden = false;
   }
+
+  // Netlify consultation form: external handler avoids custom thank-you page
+  // redirects and works with the site's existing Content Security Policy.
+  const consultationForm = $('.consultationForm[name="career-consultation"]');
+  if (consultationForm && !consultationForm.dataset.submitHandlerReady) {
+    consultationForm.dataset.submitHandlerReady = 'true';
+
+    const formStatus = consultationForm.previousElementSibling?.classList.contains('formStatus')
+      ? consultationForm.previousElementSibling
+      : $('.formStatus');
+    const submitButton = consultationForm.querySelector('button[type="submit"]');
+    const defaultButtonText =
+      consultationForm.dataset.formSubmit ||
+      submitButton?.textContent ||
+      'Send';
+
+    consultationForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!consultationForm.reportValidity()) return;
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = consultationForm.dataset.formSending || 'Sending…';
+      }
+
+      if (formStatus) {
+        formStatus.className = 'formStatus';
+        formStatus.innerHTML = '';
+      }
+
+      try {
+        const formData = new FormData(consultationForm);
+        const encoded = new URLSearchParams();
+        formData.forEach((value, key) => encoded.append(key, String(value)));
+
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encoded.toString(),
+        });
+
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        if (formStatus) {
+          const successTitle =
+            consultationForm.dataset.formSuccessTitle || 'Message sent';
+          const successMessage =
+            consultationForm.dataset.formSuccess || 'Thank you for your message.';
+          formStatus.className = 'formStatus is-success is-visible';
+          formStatus.innerHTML =
+            `<strong>${successTitle}</strong><span>${successMessage}</span>`;
+        }
+
+        consultationForm.reset();
+        formStatus?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        track('consultation_form_submit', {
+          page_language: document.documentElement.lang,
+          page_path: location.pathname,
+        });
+      } catch (error) {
+        console.error('Netlify form submission failed:', error);
+
+        if (formStatus) {
+          const errorTitle =
+            consultationForm.dataset.formErrorTitle || 'Unable to send';
+          const errorMessage =
+            consultationForm.dataset.formError ||
+            'Please try again or contact us by email.';
+          const mailText =
+            consultationForm.dataset.formMail || 'Contact by email';
+          formStatus.className = 'formStatus is-error is-visible';
+          formStatus.innerHTML =
+            `<strong>${errorTitle}</strong><span>${errorMessage} ` +
+            `<a href="mailto:japancareer.support@gmail.com">${mailText}</a></span>`;
+          formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = defaultButtonText;
+        }
+      }
+    });
+  }
+
+
 })();
